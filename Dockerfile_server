@@ -1,0 +1,12 @@
+#FROM python:3.5.3
+FROM image_with_packages
+
+WORKDIR /app/
+
+COPY server.py /app/
+#RUN pip install requests
+EXPOSE 5001
+
+ENV ENVIRONMENT local
+
+ENTRYPOINT python ./server.py
