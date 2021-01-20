@@ -1,5 +1,5 @@
 #FROM python:3.5.3
-FROM image_with_packages
+FROM khalilnechi/client_image_ml
 
 WORKDIR /app/
 
